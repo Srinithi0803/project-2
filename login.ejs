@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Login</h2>
+            <form action="/login" method="post">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" placeholder="Enter Your Email" required autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <div class="password-container">
+                        <input type="password" name="password" id="password" placeholder="Password" required>
+                        <span toggle="#password" class="eye-toggle" onclick="togglePasswordVisibility(this)">
+                            <img src="img/hide.png" alt="eye-off" id="eye-off">
+                            <img src="img/view.png" alt="eye-on" id="eye-on">
+                        </span>
+                    </div>
+                </div>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+            <p>Don't have an account? <a href="/signup">Signup</a></p>
+        </div>
+    </div>
+
+    <script>
+        function togglePasswordVisibility(element) {
+            var passwordInput = document.querySelector(element.getAttribute('toggle'));
+            var eyeOff = document.getElementById('eye-off');
+            var eyeOn = document.getElementById('eye-on');
+
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                eyeOff.style.display = 'none';
+                eyeOn.style.display = 'block';
+            } else {
+                passwordInput.type = 'password';
+                eyeOff.style.display = 'block';
+                eyeOn.style.display = 'none';
+            }
+        }
+
+        
+    </script>
+</body>
+
+</html>

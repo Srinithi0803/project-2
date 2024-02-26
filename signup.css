@@ -1,0 +1,198 @@
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.content {
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 30px;
+    margin-top: 30px; /* Adjusted margin-top to move the content and image up by 30px */
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+body{
+    margin:0 100px;
+    background-color:azure
+}
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+.nav .logo h1{
+    font-weight:bolder;
+    font-size: 40px;
+    font-family: sans-serif;
+    color: black;
+}
+.nav .logo b{
+    color: #ff511c;
+}
+input{
+    padding: 10px 15px;
+    padding-left: 5px 0;
+    cursor: pointer;
+    font-weight: 700;
+}
+.signin{
+    background: transparent;
+    border: none;
+}
+.signup{
+    background-color: #ff511c;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.content{
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 30px;
+    margin-top: 70px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.content .content-left{
+    display: block;
+    width: 100%;
+}
+.content .content-left .info{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.content .content-left .info h2{
+    font-size: 50px;
+    font-family:sans-serif;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+.content .content-left .info p{
+    font-size: 25 px;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+.content .content-left button{
+    padding:10px 25px;
+    background-color: #ff511c;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-left: 30px;
+}
+.content .content-right{
+    display: block;
+    width:100%;
+}
+.content .content-right img{
+    width:350px;
+    height: 350px;
+    position:relative;
+    margin-right: 80px;
+    user-select: none;
+    animation: rotate 10s linear infinite;
+}
+.category{
+    width: 100%;
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+.category .list-items{
+    width: 100%;
+    position: relative;
+    margin-top: 50px;
+}
+.category .list-items h3{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-bottom: 70px;
+}
+.category .list-items .card-list {
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+.category .card-list .card {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    background: #ffffff;
+    outline: 2px solid #faad96;
+}
+
+.category .card-list .card img{
+    width: 90px;
+    height: auto;
+    bottom: 140px;
+    left: 80px;
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    box-shadow: 0 10px 10px #faad96;
+    border-radius: 50%;
+}
+.category .card-list .card .food-title{
+    padding: 40px 0 10px;
+}
+.category .card-list .card .food-title h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+.category .card .desc-food{
+    font-size: 12px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.category .card .price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.category .card  .price button{
+    padding:7px 10px;
+    background-color: #ff511c;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-left: 30px;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar thumb{
+    border-radius: 20px;
+    background: #ff511c;
+}
+footer {
+    margin-top: 60px;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
